@@ -1,0 +1,44 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+}
+
+.logo.orb {
+  filter: drop-shadow(0 0 1rem #7fffe194);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  img:nth-of-type(2).logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  #root {
+    color: #120621;
+    background-color: #ffffff;
+  }
+}
