@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255);
-  background-color: #120621;
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,9 +14,8 @@
 }
 
 body {
+  background-color: #120621;
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
   max-width: 100%;
@@ -28,8 +27,13 @@ h1 {
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
-    color: #120621;
+  body {
+    color: #0a0313;
     background-color: #ffffff;
+  }
+
+  :root {
+    color: #0a0313;
+
   }
 }
