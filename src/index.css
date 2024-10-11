@@ -1,11 +1,11 @@
 :root {
-  font-family: Jost, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: light;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255);
-
+  background-color: #120621;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,11 +14,14 @@
 }
 
 body {
-  background-color: #120621;
+  background-color: #0d0418;
   margin: 0;
+
   min-width: 320px;
   min-height: 100vh;
   max-width: 100%;
+
+
 }
 
 h1 {

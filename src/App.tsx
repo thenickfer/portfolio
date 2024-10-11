@@ -1,12 +1,16 @@
-import { useState } from 'react'
 
-import './App.css'
-import Home from './Menu.tsx';
+import Navbar from './components/navbar/Navbar.tsx';
+import Home from './pages/home/Home.tsx';
+
 
 
 function App() {
   return (
-    <Home />
+    <>
+      <Navbar />
+      <Home />
+    </>
+
   );
 }
 
