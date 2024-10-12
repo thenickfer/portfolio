@@ -1,0 +1,26 @@
+.cardImg {
+    grid-area: 1 / 1 / span 3 / span 1;
+    width: 100%;
+    background-color: aqua;
+}
+
+.cardTitle {
+    grid-area: 1 / 2 / span 1 / span 1;
+    background-color: blue;
+}
+
+.cardText {
+    grid-area: 2 / 2 / span 1 / span 1;
+    background-color: red;
+}
+
+.link {
+    grid-area: 3 / 2 / span 1 / span 1;
+    background-color: green;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 20% 70% 10%;
+}
