@@ -188,11 +188,3 @@ div.card:hover {
 .card.isOpen.link {
     z-index: 120;
 }
-
-
-.sla {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background-color: red;
-}
