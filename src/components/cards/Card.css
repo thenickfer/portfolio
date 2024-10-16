@@ -109,6 +109,20 @@ div.card:hover {
     filter: drop-shadow(0 0 0);
 }
 
+.miniLogos {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    gap: 1.4vw;
+    position: relative;
+    margin-top: -15vh;
+}
+
+.miniIcon {
+    position: relative;
+    scale: 1.5;
+}
+
 @media only screen and (max-width: 680px) {
     .card.isOpen {
         width: 384px;
@@ -130,6 +144,14 @@ div.card:hover {
     .cardImg {
         width: 100%;
         height: 100%;
+    }
+
+    .cardTitle {
+        margin-top: 8vh;
+    }
+
+    .miniLogos {
+        margin-top: -10vh;
     }
 }
 
@@ -156,18 +178,4 @@ div.card:hover {
         background-color: #0a031300;
     }
 
-}
-
-.miniLogos {
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    gap: 1vw;
-    position: relative;
-    margin-top: -15vh;
-}
-
-.miniIcon {
-    position: relative;
-    scale: 1.5;
 }

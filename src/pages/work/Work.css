@@ -6,42 +6,10 @@ div.cardContainer {
     column-gap: 5vh;
     width: 60vw;
     height: 100vh;
-    margin-left: 90vw;
+    margin-left: 92.5vw;
     align-items: left;
     position: relative;
     margin-top: 10vh;
-}
-
-@media only screen and (max-width: 1000px) {
-    div.cardContainer {
-        grid-template-columns: 400px;
-        margin-top: 30vh;
-    }
-}
-
-@media only screen and (max-width: 680px) {
-    div.cardContainer {
-        grid-template-columns: 400px;
-        margin-top: 20vh;
-        row-gap: 2vh;
-    }
-
-    .planetDiv {
-        justify-content: flex-end;
-        align-items: flex-end;
-        width: 100vw;
-        height: 100vh;
-        margin-left: -102vw;
-    }
-}
-
-@media only screen and (max-width: 440px) {
-    div.cardContainer {
-        grid-template-columns: 300px;
-        grid-template-rows: repeat(auto-fill, 22.5vh);
-        width: 40vw;
-        margin-top: 15vh;
-    }
 }
 
 .planetDiv {
@@ -54,4 +22,37 @@ div.cardContainer {
     width: 0.5vw;
     position: fixed;
     z-index: -10;
+}
+
+@media only screen and (max-width: 1000px) {
+    div.cardContainer {
+        grid-template-columns: 400px;
+        margin-top: 30vh;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    div.cardContainer {
+        grid-template-columns: 400px;
+        margin-top: 24vh;
+        row-gap: 2vh;
+    }
+
+    div.planetDiv {
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    div.cardContainer {
+        grid-template-columns: 300px;
+        grid-template-rows: repeat(auto-fill, 22.5vh);
+        width: 40vw;
+        margin-top: 25vh;
+    }
+
+
 }
