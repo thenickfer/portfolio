@@ -56,7 +56,7 @@
 
 @media only screen and (max-width: 680px) {
     .logo-container {
-        margin-left: 0;
+        margin-left: 90vw;
         margin-top: 100vh;
     }
 }

@@ -12,7 +12,7 @@ div {
 }
 
 .bar {
-    z-index: 5;
+    z-index: 100;
 }
 
 button {
@@ -23,9 +23,7 @@ button {
     font-style: normal;
     line-height: normal;
     cursor: pointer;
-    transition: drop-shadow 0.2s;
-    transition: font-size 0.1s;
-    transition: border-bottom 0.1s;
+    transition: border-bottom 0.2s, filter 0.3s, font-size 0.2s, scale 0.3s;
     background-color: transparent;
     width: 75%;
     height: 2em;
@@ -35,15 +33,17 @@ button {
     padding-left: 5%;
     padding-top: 0;
     margin-left: 10%;
+
 }
 
 @media only screen and (max-width: 680px) {
-    div {
+    div.bar {
         flex-direction: row;
         justify-content: center;
         align-self: flex-start;
         width: 100vw;
         height: 10vh;
+        margin-top: -90vh;
     }
 
     button {
@@ -60,6 +60,10 @@ button {
 button:hover {
     filter: drop-shadow(0 0 10px #7fffe1);
     scale: 1.1;
+}
+
+button:active {
+    scale: 0.9;
 }
 
 button.selected {

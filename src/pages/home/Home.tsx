@@ -2,8 +2,6 @@ import Planet from '../../components/planet/Planet.tsx';
 import Hello from '../../components/welcome/Hello.tsx';
 import { motion } from 'framer-motion';
 
-
-
 function Home() {
     return (
         <motion.div

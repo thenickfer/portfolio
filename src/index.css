@@ -32,7 +32,7 @@ h1 {
 @media (prefers-color-scheme: light) {
   body {
     color: #0a0313;
-    background-color: #ffffff;
+    background-color: #EEEEEE;
   }
 
   :root {

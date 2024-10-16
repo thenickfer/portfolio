@@ -1,7 +1,8 @@
-.cardImg {
+/* .cardImg {
     grid-area: 1 / 1 / span 3 / span 1;
     width: 100%;
-    background-color: aqua;
+    margin-right: 1rem;
+
 }
 
 .cardTitle {
@@ -17,10 +18,157 @@
 .link {
     grid-area: 3 / 2 / span 1 / span 1;
     background-color: green;
+    text-align: right;
+    width: 50%;
+    margin-left: 45%;
+    padding-right: 5%;
 }
 
 .card {
     display: grid;
     grid-template-columns: 30% 70%;
     grid-template-rows: 20% 70% 10%;
+    width: 30vw;
+    height: 30vh;
+    margin: 5vh auto;
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+@media (prefers-color-scheme: light) {
+    .card {
+        background-color: black;
+    }
+
+} */
+
+
+div.card {
+    width: 384px;
+    height: 240px;
+    background-color: white;
+    color: #0a0313;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: height 0.7s, width 0.7s, filter 0.5s;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+div.card:hover {
+    z-index: 100;
+    filter: drop-shadow(0 0 10px #7fffe1);
+}
+
+.cardImg {
+    width: 384px;
+    height: 240px;
+    position: absolute;
+    transition: opacity 0.2s;
+    z-index: 1;
+}
+
+.cardImg.isOpen {
+    opacity: 0;
+}
+
+.cover {
+    width: 384px;
+    height: 240px;
+    position: absolute;
+    z-index: 5;
+    background-color: #0a031387;
+    transition: background-color 0.5s;
+}
+
+.cover:hover {
+    background-color: #0a031300;
+    display: hidden;
+}
+
+.cover.isOpen {
+    visibility: hidden;
+}
+
+.cardTitle {
+    color: #000000;
+    position: relative;
+    margin-top: 9vh;
+}
+
+.card.isOpen {
+    width: 207%;
+    height: 218%;
+    z-index: 100;
+    /* cursor: default; */
+}
+
+.card.isOpen:hover {
+    filter: drop-shadow(0 0 0);
+}
+
+@media only screen and (max-width: 680px) {
+    .card.isOpen {
+        width: 384px;
+        z-index: 100;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    div.card {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cover {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cardImg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    div.card {
+        background-color: #EEE;
+        color: #0a0313;
+        border: 2px solid #0a03132c;
+    }
+
+    div.card:hover {
+        filter: drop-shadow(0 0 10px #9D00FF);
+    }
+
+    .cover {
+        background-color: #EEEEEE60;
+    }
+
+    .cardTitle {
+        color: #0a0313;
+    }
+
+    .cover:hover {
+        background-color: #0a031300;
+    }
+
+}
+
+.miniLogos {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    gap: 1vw;
+    position: relative;
+    margin-top: -15vh;
+    color: #501010;
+}
+
+.miniIcon {
+    position: relative;
+    scale: 1.5;
 }
