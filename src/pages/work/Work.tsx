@@ -6,7 +6,7 @@ import Planet from '../../components/planet/Planet.tsx';
 
 import { motion } from 'framer-motion';
 
-import { DiCss3, DiHtml5, DiJsBadge, DiNodejsSmall, DiJava } from 'react-icons/di'
+import { DiCss3, DiHtml5, DiJsBadge, /* DiNodejsSmall, DiJava */ } from 'react-icons/di'
 
 
 const Work = () => {

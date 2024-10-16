@@ -1,6 +1,6 @@
 import { IconType } from 'react-icons';
 import './Card.css';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { IconContext } from "react-icons";
 
