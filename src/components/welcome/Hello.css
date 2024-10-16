@@ -4,7 +4,7 @@ h1.title {
     font-weight: 300;
     word-wrap: break-word;
     line-height: normal;
-    color: #FFF;
+    color: azure;
 }
 
 h2.subtitle {
@@ -13,7 +13,7 @@ h2.subtitle {
     font-weight: 500;
     word-wrap: break-word;
     line-height: normal;
-    color: #FFF;
+    color: azure;
     line-height: normal;
 }
 
@@ -28,7 +28,7 @@ p.content {
 
 
 div.contHello {
-    color: #FFF;
+    color: azure;
     height: 55vh;
     width: 30vw;
     z-index: 0;

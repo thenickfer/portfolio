@@ -30,10 +30,10 @@ const Card = (props: Data) => {
     }, []);
 
     return (
-
         <div className={isOpen ? 'card isOpen' : 'card'}
             data-isOpen={isOpen}
             onClick={() => setIsOpen(!isOpen)}>
+
             <div className={isOpen ? 'cover isOpen' : 'cover'}>
                 <h2 className='cardTitle'>{props.title}</h2>
                 <div className="miniLogos">
@@ -49,7 +49,9 @@ const Card = (props: Data) => {
             <img src={props.imageRef} alt={props.title} className={isOpen ? 'cardImg isOpen' : 'cardImg'} />
 
             <p className='cardText'>{props.text}</p>
-            <a href={props.url} target='_blank' className='link'> Click to see more!</a>
+            <p className='link'>
+                You can view the full project <a href={props.url} target='_blank'>here</a>.
+            </p>
         </div>
     )
 };

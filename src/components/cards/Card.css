@@ -47,11 +47,11 @@
 div.card {
     width: 384px;
     height: 240px;
-    background-color: white;
+    background-color: azure;
     color: #0a0313;
     border-radius: 3px;
     overflow: hidden;
-    transition: height 0.7s, width 0.7s, filter 0.5s;
+    transition: height 0.2s, width 0.2s, filter 0.5s, position 0.2s;
     position: relative;
     display: block;
     cursor: pointer;
@@ -79,13 +79,18 @@ div.card:hover {
     height: 240px;
     position: absolute;
     z-index: 5;
+    color: azure;
     background-color: #0a031387;
-    transition: background-color 0.5s;
+    transition: background-color 0.2s;
 }
 
 .cover:hover {
     background-color: #0a031300;
-    display: hidden;
+    color: transparent;
+}
+
+.cover:hover .miniIcon {
+    display: none;
 }
 
 .cover.isOpen {
@@ -93,16 +98,19 @@ div.card:hover {
 }
 
 .cardTitle {
-    color: #000000;
     position: relative;
     margin-top: 9vh;
+    font-weight: 550;
 }
 
 .card.isOpen {
-    width: 207%;
-    height: 218%;
+    /* width: 207%;
+    height: 218%; */
     z-index: 100;
-    /* cursor: default; */
+    position: absolute;
+    width: 60vw;
+    height: 100vh;
+    cursor: default;
 }
 
 .card.isOpen:hover {
@@ -168,9 +176,6 @@ div.card:hover {
 
     .cover {
         background-color: #EEEEEE60;
-    }
-
-    .cardTitle {
         color: #0a0313;
     }
 
@@ -178,4 +183,16 @@ div.card:hover {
         background-color: #0a031300;
     }
 
+}
+
+.card.isOpen.link {
+    z-index: 120;
+}
+
+
+.sla {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
 }

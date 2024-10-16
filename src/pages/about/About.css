@@ -1,0 +1,61 @@
+div.me {
+    width: 70vw;
+    height: 100vh;
+    color: azure;
+    position: relative;
+    margin-left: 90vw;
+    z-index: 1;
+    display: grid;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-columns: 100%;
+    row-gap: 0;
+    align-content: center;
+    text-align: center;
+}
+
+
+
+div.skillCont {
+    display: grid;
+    grid-template-columns: repeat(5, 15%);
+    grid-template-rows: 100%;
+    column-gap: 1vh;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    overflow: unset;
+
+}
+
+div.skill {
+    display: block;
+    height: 40%;
+    width: 100%;
+    position: relative;
+    font-family: Helvetica;
+}
+
+
+@media only screen and (max-width: 680px) {
+    .me {
+        width: 100vw;
+        height: 90vh;
+        margin-top: 10vh;
+    }
+
+    div.skillCont {
+        height: 50%;
+    }
+
+    div.skill {
+        font-size: 0.5rem;
+    }
+
+}
+
+@media (prefers-color-scheme: light) {
+    .me {
+        color: #0a0313;
+    }
+}

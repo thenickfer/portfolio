@@ -8,8 +8,17 @@ div.cardContainer {
     height: 100vh;
     margin-left: 92.5vw;
     align-items: left;
-    position: relative;
+    position: absolute;
     margin-top: 10vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+}
+
+div.cardContainer::-webkit-scrollbar {
+    display: none;
 }
 
 .planetDiv {
