@@ -31,7 +31,10 @@ function About(props: previousPage) {
 
     return (
         <div className='about'>
-            <div className='me'>
+            <motion.div className='me'
+                initial={{ marginBottom: "100vh" }}
+                animate={{ marginBottom: 0 }}
+                transition={{ duration: 2.2, type: "spring", stiffness: 260, damping: 20 }} >
                 <div className='abt'>
                     <h1>About Me</h1>
                     <p id="abtMe" >I'm a second semester Computer Science student at Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS). Currently, I'm primarily studying web development</p>
@@ -154,7 +157,7 @@ function About(props: previousPage) {
                     </div>
 
                 </div>
-            </div>
+            </motion.div>
             <motion.div className='planetDiv'
                 initial={{ marginLeft: window.innerWidth > 680 ? (props.previous == 'Work' ? 0 : "-100vw") : '0' }}
                 animate={{ marginLeft: 0 }}

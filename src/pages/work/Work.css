@@ -6,7 +6,7 @@ div.cardContainer {
     column-gap: 5vh;
     width: 100vw;
     height: 100vh;
-    margin-left: 92.5vw;
+    margin-left: 85vw;
     align-items: left;
     position: absolute;
     margin-top: 10vh;
@@ -81,6 +81,7 @@ div.expandedCard#expandedCard {
         grid-template-columns: 400px;
         margin-top: 24vh;
         row-gap: 2vh;
+        margin-left: 92.5vw;
     }
 
     div.planetDiv {
