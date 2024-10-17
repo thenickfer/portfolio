@@ -3,7 +3,6 @@ import Navbar from './components/navbar/Navbar.tsx';
 import Home from './pages/home/Home.tsx';
 import Work from './pages/work/Work.tsx';
 import About from './pages/about/About.tsx';
-import { pre } from 'framer-motion/client';
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('Home');

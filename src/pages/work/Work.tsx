@@ -1,6 +1,6 @@
 import Card from '../../components/cards/Card.tsx';
 import './Work.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import CC from "../../assets/currency-converter.png";
 import Calc from "../../assets/calculator.png";
