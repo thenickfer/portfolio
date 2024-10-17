@@ -11,10 +11,11 @@ type Data = {
     url: string,
     imageRef: string,
     icons: Array<IconType>
+    isOpen: boolean,
+    onToggle: () => void
 }
 
 const Card = (props: Data) => {
-    const [isOpen, setIsOpen] = useState(false);
     const [isLightMode, setIsLightMode] = useState(false);
 
     useEffect(() => {
@@ -30,11 +31,9 @@ const Card = (props: Data) => {
     }, []);
 
     return (
-        <div className={isOpen ? 'card isOpen' : 'card'}
-            data-isOpen={isOpen}
-            onClick={() => setIsOpen(!isOpen)}>
+        <div className={/* isOpen ? 'card isOpen' : */ 'card'} onClick={props.onToggle}>
 
-            <div className={isOpen ? 'cover isOpen' : 'cover'}>
+            <div className={/* isOpen ? 'cover isOpen' : */ 'cover'}>
                 <h2 className='cardTitle'>{props.title}</h2>
                 <div className="miniLogos">
                     {
@@ -46,13 +45,11 @@ const Card = (props: Data) => {
                     }
                 </div>
             </div>
-            <img src={props.imageRef} alt={props.title} className={isOpen ? 'cardImg isOpen' : 'cardImg'} />
+            <img src={props.imageRef} alt={props.title} className={/* isOpen ? 'cardImg isOpen' : */ 'cardImg'} />
 
-            <p className='cardText'>{props.text}</p>
-            <p className='link'>
-                You can view the full project <a href={props.url} target='_blank'>here</a>.
-            </p>
+
         </div>
+
     )
 };
 export default Card;

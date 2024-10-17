@@ -1,30 +1,29 @@
 
+import { useState } from "react";
 import "./Navbar.css";
 
-const Navbar = () => {
+type NavbarProps = {
+    setSelectedPage: (page: string) => void;
+};
+
+const Navbar = (props: NavbarProps) => {
+
 
     const buttons = [
-        { name: "Home", selected: true },
-        { name: "Work", selected: false },
-        { name: "About", selected: false }
+        "Home",
+        "Work",
+        "About"
     ]
+
+    const [selectedButton, setSelectedButton] = useState(buttons[0]);
 
     return (
         <div className="bar">
             {buttons.map((button, index) => (
-                <button key={index} className={button.selected ? "selected" : ""}>{button.name}</button>
+                <button onClick={() => { setSelectedButton(button); props.setSelectedPage(button) }} key={index} className={selectedButton == button ? "selected" : ""}>{button}</button>
             ))}
         </div>
     )
 }
-
-const buttons = document.querySelectorAll('button');
-
-buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        buttons.forEach(btn => btn.classList.remove('selected'));
-        button.classList.add('selected');
-    });
-});
 
 export default Navbar

@@ -4,7 +4,7 @@ div.cardContainer {
     grid-template-rows: repeat(auto-fill, 30vh);
     row-gap: 5vh;
     column-gap: 5vh;
-    width: 60vw;
+    width: 100vw;
     height: 100vh;
     margin-left: 92.5vw;
     align-items: left;
@@ -33,7 +33,43 @@ div.cardContainer::-webkit-scrollbar {
     z-index: -10;
 }
 
-@media only screen and (max-width: 1000px) {
+
+
+div.expandedCard#expandedCard {
+    position: fixed;
+    width: 70vw;
+    height: 90vh;
+    margin-left: 90vw;
+    background-color: rgba(240, 255, 255, 0.97);
+    border-radius: 8px;
+    z-index: 100;
+    color: #0a0313;
+    font-family: Inter;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 35% 10% 40% 10%;
+    overflow: hidden;
+    text-align: center;
+    row-gap: 0;
+    align-items: flex-start;
+}
+
+.imgContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.openCardImg {
+    width: 100%;
+    margin-top: 5vw;
+
+}
+
+
+@media only screen and (max-width: 1200px) {
     div.cardContainer {
         grid-template-columns: 400px;
         margin-top: 30vh;
@@ -53,15 +89,31 @@ div.cardContainer::-webkit-scrollbar {
         width: 100vw;
         height: 100vh;
     }
+
+    div.expandedCard#expandedCard {
+        width: 450px;
+        height: 80vh;
+    }
 }
 
 @media only screen and (max-width: 440px) {
     div.cardContainer {
         grid-template-columns: 300px;
         grid-template-rows: repeat(auto-fill, 22.5vh);
-        width: 40vw;
+        width: 300px;
         margin-top: 25vh;
+        margin-left: 85vw;
+        row-gap: 0;
     }
 
+    div.expandedCard#expandedCard {
+        width: 350px;
+        height: 80vh;
+    }
+
+    .openCardImg {
+        margin-top: -5%;
+
+    }
 
 }
