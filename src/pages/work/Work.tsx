@@ -3,7 +3,7 @@ import './Work.css';
 import { useState } from 'react';
 
 import CC from "../../assets/currency-converter.png";
-import Calc from "../../assets/calculator.png";
+import Calc from "../../assets/Calculator.png";
 
 import Planet from '../../components/planet/Planet.tsx';
 
