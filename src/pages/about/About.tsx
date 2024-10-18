@@ -37,7 +37,7 @@ function About(props: previousPage) {
                 transition={{ duration: 2.2, type: "spring", stiffness: 260, damping: 20 }} >
                 <div className='abt'>
                     <h1>About Me</h1>
-                    <p id="abtMe" >I'm a second semester Computer Science student at Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS). Currently, I'm primarily studying web development</p>
+                    <p id="abtMe" >I'm a second semester Computer Science student at Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS). Currently, I'm primarily studying web development. All my repositories are on my GitHub page.</p>
                     <h2>Socials</h2>
                     <div className="skillCont" style={{ gridTemplateColumns: "repeat(3, 30%)" }} >
                         <a href="https://github.com/thenickfer" target='_blank'>
@@ -147,6 +147,12 @@ function About(props: previousPage) {
                                 <SiVisualstudiocode />
                             </IconContext.Provider>
                             <p>VS Code</p>
+                        </div>
+                        <div className="skill" >
+                            <IconContext.Provider value={{ style: { color: isLightMode ? "#F6228E" : "cyan", scale: "5" } }} >
+                                <DiUnitySmall />
+                            </IconContext.Provider>
+                            <p>Unity</p>
                         </div>
                         <div className="skill" >
                             <IconContext.Provider value={{ style: { color: isLightMode ? "#F6228E" : "cyan", scale: "5" } }} >

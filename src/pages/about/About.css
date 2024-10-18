@@ -22,7 +22,7 @@ div.me::-webkit-scrollbar {
     display: none;
 }
 
-p.abtMe {
+p#abtMe {
     width: 60%;
     margin-left: 20%;
 }
@@ -93,7 +93,7 @@ div.skill:hover {
         font-size: 0.5rem;
     }
 
-    p.abtMe {
+    p#abtMe {
         width: 100%;
         margin-left: 0;
     }
@@ -105,6 +105,8 @@ div.skill:hover {
     div.skillCont {
         margin-top: -10%;
     }
+
+
 
 }
 
