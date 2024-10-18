@@ -40,7 +40,7 @@ const Work = (props: previousPage) => {
         },
         {
             title: "Scientific Calculator",
-            text: "Card Text",
+            text: "This project is a simple calculator application developed in Python. It features basic arithmetic operations like addition, subtraction, multiplication, and division. It also includes a scientific mode with more advanced functions like square root, power, and trigonometric operations. This was my first project in HTML, CSS, and JavaScript, and it was a great learning experience.",
             url: "https://github.com/thenickfer/Calculator",
             imageRef: Calc,
             icons: [DiHtml5, DiCss3, DiJsBadge]
