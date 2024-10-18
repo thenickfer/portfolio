@@ -69,6 +69,11 @@ div.skill {
     width: 100%;
     position: relative;
     font-family: Helvetica;
+    transition: scale 0.2s;
+}
+
+div.skill:hover {
+    scale: 1.1;
 }
 
 
