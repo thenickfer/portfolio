@@ -43,7 +43,7 @@ div.abt {
     color: inherit;
     position: relative;
     display: grid;
-    grid-template-rows: 10% 20% 10% 30%;
+    grid-template-rows: 10% 20% 10% 28% 2%;
     width: 100%;
     height: 100%;
 }
@@ -59,6 +59,7 @@ div.skillCont {
     position: relative;
     z-index: 1;
     overflow: unset;
+
 
 }
 
@@ -90,6 +91,14 @@ div.skill {
     p.abtMe {
         width: 100%;
         margin-left: 0;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    div.skillCont {
+        margin-top: -10%;
     }
 
 }

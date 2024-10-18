@@ -155,7 +155,7 @@ function About(props: previousPage) {
                             <p>Unity</p>
                         </div>
                     </div>
-
+                    <div style={{ height: "10px", position: "relative", display: "block" }}> </div>
                 </div>
             </motion.div>
             <motion.div className='planetDiv'

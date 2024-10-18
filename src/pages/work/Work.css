@@ -103,7 +103,7 @@ div.expandedCard#expandedCard {
         grid-template-rows: repeat(auto-fill, 22.5vh);
         width: 300px;
         margin-top: 25vh;
-        margin-left: 85vw;
+        margin-left: 90vw;
         row-gap: 0;
     }
 

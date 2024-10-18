@@ -64,6 +64,12 @@ div.contHello {
 
 }
 
+@media only screen and (max-width: 400px) {
+    div.contHello {
+        margin-left: 95vw;
+    }
+}
+
 @media (prefers-color-scheme: light) {
     h1.title {
         color: #0a0313;
