@@ -80,7 +80,7 @@ const Work = (props: previousPage) => {
                             <img src={selectedCard.imageRef} alt={selectedCard.title} className='openCardImg' />
                         </div>
                         <h2>{selectedCard.title}</h2>
-                        <p>{selectedCard.text}</p>
+                        <p style={{ padding: "0 5%" }} >{selectedCard.text}</p>
                         <p className='link'>
                             You can view the full project <a href={selectedCard.url} target='_blank'>here</a>
                         </p>
