@@ -9,7 +9,7 @@ div.cardContainer {
     margin-left: 85vw;
     align-items: left;
     position: absolute;
-    margin-top: 10vh;
+    padding-top: 10vh;
     overflow: scroll;
     overflow-x: hidden;
     -ms-overflow-style: none;
