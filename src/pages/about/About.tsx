@@ -7,7 +7,10 @@ import { SiTypescript, SiJavascript, SiMongodb, SiIntellijidea, SiVisualstudioco
 import './About.css';
 import { IconContext } from 'react-icons';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+
+import { useForm, ValidationError } from '@formspree/react';
+
 
 
 type previousPage = {
@@ -16,6 +19,11 @@ type previousPage = {
 
 function About(props: previousPage) {
     const [isLightMode, setIsLightMode] = useState(false);
+    const [state, handleSubmit] = useForm(import.meta.env.VITE_EMAIL_API);
+
+    const nameRef = useRef<HTMLInputElement>(null);
+    const emailRef = useRef<HTMLInputElement>(null);
+    const messageRef = useRef<HTMLTextAreaElement>(null);
 
     useEffect(() => {
         const mediaQuery = window.matchMedia('(prefers-color-scheme: light)');
@@ -28,6 +36,17 @@ function About(props: previousPage) {
         mediaQuery.addEventListener('change', handleChange);
         return () => mediaQuery.removeEventListener('change', handleChange);
     }, []);
+
+    const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        handleSubmit(e);
+
+        if (nameRef.current) nameRef.current.value = '';
+        if (emailRef.current) emailRef.current.value = '';
+        if (messageRef.current) messageRef.current.value = '';
+
+    }
+
 
     return (
         <div className='about'>
@@ -154,14 +173,46 @@ function About(props: previousPage) {
                             </IconContext.Provider>
                             <p>Unity</p>
                         </div>
-                        <div className="skill" >
-                            <IconContext.Provider value={{ style: { color: isLightMode ? "#F6228E" : "cyan", scale: "5" } }} >
-                                <DiUnitySmall />
-                            </IconContext.Provider>
-                            <p>Unity</p>
-                        </div>
+
                     </div>
                     <div style={{ height: "10px", position: "relative", display: "block" }}> </div>
+                </div>
+                <div className="contactMe">
+                    <h2>Contact Me</h2>
+                    <p>For any questions or proposals, you can contact me through my social networks or by email.</p>
+
+                    <form onSubmit={handleFormSubmit} >
+                        <label htmlFor='name'>Your Name</label>
+                        <input id="name" name="Name" type="text" placeholder="Name" required ref={nameRef} />
+
+
+                        <label htmlFor='email'>Your Email</label>
+                        <input id="email" name='Email' type="email" placeholder="Email" required ref={emailRef} />
+                        <ValidationError
+                            prefix="Email"
+                            field="email"
+                            errors={state.errors}
+                        />
+                        <label htmlFor='message'>Message</label>
+                        <textarea required
+                            id="message"
+                            name="message"
+                            ref={messageRef}
+                        />
+                        <ValidationError
+                            prefix="Message"
+                            field="message"
+                            errors={state.errors}
+                        />
+
+                        <button id="sub" type="submit" disabled={state.submitting}>
+                            Submit
+                        </button>
+                        <p style={{ display: state.succeeded ? "block" : "none" }} id="thanks" >Thanks for the message!</p>
+
+                    </form>
+
+
                 </div>
             </motion.div>
             <motion.div className='planetDiv'

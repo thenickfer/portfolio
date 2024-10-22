@@ -2,11 +2,11 @@ div.me {
     width: 70vw;
     height: 100vh;
     color: azure;
-    position: relative;
+    position: fixed;
     margin-left: 90vw;
     z-index: 1;
     display: grid;
-    grid-template-rows: 40% 80%;
+    grid-template-rows: 40% 80% 100vh;
     grid-template-columns: 100%;
     row-gap: 0;
     align-items: center;
@@ -22,6 +22,64 @@ div.me::-webkit-scrollbar {
     display: none;
 }
 
+div.contactMe {
+    color: inherit;
+    position: relative;
+    gap: 0;
+    height: 100%;
+    width: 100%;
+}
+
+form {
+    margin-top: 2%;
+    color: inherit;
+    position: relative;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    align-content: center;
+}
+
+#name,
+#email,
+#message {
+    width: 70%;
+    margin-left: 15%;
+    background-color: inherit;
+    border: 1px solid azure;
+    border-radius: 3px;
+    color: inherit;
+    font-family: Roboto, sans-serif;
+    margin-bottom: 3%;
+}
+
+label,
+#thanks {
+    margin-left: 15%;
+}
+
+#name,
+#email {
+    font-size: 1.2rem;
+    height: 10%;
+}
+
+#message {
+    height: 20%;
+    font-size: 1rem;
+}
+
+button#sub {
+    background-color: rgb(0, 228, 228);
+    width: 17%;
+    height: 10%;
+    border-radius: 8px;
+    margin-left: 15%;
+}
+
+
 p#abtMe {
     width: 60%;
     margin-left: 20%;
@@ -32,7 +90,8 @@ div.skillsTab {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-rows: repeat(6, 10%);
+    gap: 4vh;
+    grid-template-rows: 15% repeat(6, 10%);
     grid-template-columns: 100%;
     position: relative;
     align-items: flex-start;
@@ -98,6 +157,12 @@ div.skill:hover {
         margin-left: 0;
     }
 
+    button#sub {
+        width: 40%;
+        padding-left: 2%;
+        padding-bottom: 12%;
+    }
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -116,6 +181,17 @@ div.skill:hover {
     }
 
     div.skill {
-        color: #0a0313
+        color: #0a0313;
+    }
+
+    #name,
+    #email,
+    #message {
+        border: 1px solid #0a0313;
+        background-color: azure;
+    }
+
+    button#sub {
+        background-color: #F6228E;
     }
 }
