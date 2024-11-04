@@ -92,7 +92,7 @@ div.skillsTab {
     display: grid;
     gap: 4vh;
     grid-template-rows: 15% repeat(6, 10%);
-    grid-template-columns: 100%;
+    grid-template-columns: 80%;
     position: relative;
     align-items: flex-start;
 }
@@ -109,10 +109,12 @@ div.abt {
 
 
 div.skillCont {
-    display: grid;
-    grid-template-columns: repeat(5, 15%);
+    /* display: grid;
+    grid-template-columns: repeat(6, 15%);
     grid-template-rows: 100%;
-    column-gap: 1vh;
+    column-gap: 1vh; */
+    display: flex;
+    flex-direction: row;
     height: 100%;
     width: 100%;
     position: relative;

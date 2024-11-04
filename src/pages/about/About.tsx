@@ -2,7 +2,7 @@ import Planet from '../../components/planet/Planet.tsx';
 import { motion } from 'framer-motion';
 
 import { DiCss3, DiHtml5, DiNodejsSmall, DiReact, DiJava, DiUnitySmall } from "react-icons/di";
-import { SiTypescript, SiJavascript, SiMongodb, SiIntellijidea, SiVisualstudiocode, SiPrisma, SiGithub, SiLinkedin, SiDiscord } from "react-icons/si";
+import { SiNestjs, SiPostgresql, SiTypescript, SiJavascript, SiMongodb, SiIntellijidea, SiVisualstudiocode, SiPrisma, SiGithub, SiLinkedin, SiDiscord } from "react-icons/si";
 
 import './About.css';
 import { IconContext } from 'react-icons';
@@ -141,16 +141,22 @@ function About(props: previousPage) {
                             <p>TypeScript</p>
                         </div>
                         <div className="skill" >
-                            <IconContext.Provider value={{ style: { color: isLightMode ? "#F6228E" : "cyan", scale: "4" } }} >
-                                <DiNodejsSmall />
-                            </IconContext.Provider>
-                            <p>NodeJS</p>
-                        </div>
-                        <div className="skill" >
                             <IconContext.Provider value={{ style: { color: isLightMode ? "#F6228E" : "cyan", scale: "3.5" } }} >
                                 <SiPrisma />
                             </IconContext.Provider>
                             <p>Prisma</p>
+                        </div>
+                        <div className="skill" >
+                            <IconContext.Provider value={{ style: { color: isLightMode ? "#F6228E" : "cyan", scale: "3.5" } }} >
+                                <SiPostgresql />
+                            </IconContext.Provider>
+                            <p>PostgreSQL</p>
+                        </div>
+                        <div className="skill" >
+                            <IconContext.Provider value={{ style: { color: isLightMode ? "#F6228E" : "cyan", scale: "3.5" } }} >
+                                <SiNestjs />
+                            </IconContext.Provider>
+                            <p>NestJS</p>
                         </div>
                     </div>
                     <h2>Tools</h2>
@@ -173,7 +179,12 @@ function About(props: previousPage) {
                             </IconContext.Provider>
                             <p>Unity</p>
                         </div>
-
+                        <div className="skill" >
+                            <IconContext.Provider value={{ style: { color: isLightMode ? "#F6228E" : "cyan", scale: "4" } }} >
+                                <DiNodejsSmall />
+                            </IconContext.Provider>
+                            <p>NodeJS</p>
+                        </div>
                     </div>
                     <div style={{ height: "10px", position: "relative", display: "block" }}> </div>
                 </div>
