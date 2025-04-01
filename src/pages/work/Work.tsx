@@ -34,14 +34,14 @@ const Work = (props: previousPage) => {
         {
             title: "Currency Converter",
             text: "The Currency Converter project is a web application developed as part of the AGES study group's second sprint. It integrates multiple APIs to fetch real-time currency exchange rates, including the Frankfurter, AwesomeAPI, and FlagsAPI for flag icons. The project allows users to easily convert currencies by selecting different options, and it's a practical example of API handling and front-end development. It also includes a graph generating feature.",
-            url: "https://vercel.live/link/currency-converter-alpha-ten.vercel.app?via=project-dashboard-alias-list&p=1&page=/",
+            url: "https://currency-converter-alpha-ten.vercel.app/",
             imageRef: CC,
             icons: [DiHtml5, DiCss3, DiJsBadge]
         },
         {
             title: "Scientific Calculator",
             text: "This project is a simple calculator application developed in Python. It features basic arithmetic operations like addition, subtraction, multiplication, and division. It also includes a scientific mode with more advanced functions like square root, power, and trigonometric operations. This was my first project in HTML, CSS, and JavaScript, and it was a great learning experience.",
-            url: "https://vercel.live/link/calculator-snowy-xi.vercel.app?via=project-dashboard-alias-list&p=1&page=/",
+            url: "https://calculator-snowy-xi.vercel.app/",
             imageRef: Calc,
             icons: [DiHtml5, DiCss3, DiJsBadge]
         },
