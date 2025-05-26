@@ -4,12 +4,14 @@ import { useState } from 'react';
 
 import CC from "../../assets/currency-converter.png";
 import Calc from "../../assets/Calculator.png";
+import Boids from "../../assets/Boids.png";
 
 import Planet from '../../components/planet/Planet.tsx';
 
 import { motion, AnimatePresence } from 'framer-motion';
 
-import { DiCss3, DiHtml5, DiJsBadge, /* DiNodejsSmall, DiJava */ } from 'react-icons/di'
+import { DiCss3, DiHtml5, DiJsBadge, DiNodejsSmall/*, DiJava */ } from 'react-icons/di'
+import { SiTypescript } from 'react-icons/si';
 
 type previousPage = {
     previous: string
@@ -46,6 +48,13 @@ const Work = (props: previousPage) => {
             icons: [DiHtml5, DiCss3, DiJsBadge]
         },
 
+        {
+            title: "Boid simulation",
+            text: "This was a shorter personal project with the objective of actually applying some concepts I've been learning during the 3rd semester of my CS bachelor's, mostly for comparing the performance of different data structures such as HashMaps and Octrees",
+            url: "https://boids-alpha.vercel.app/",
+            imageRef: Boids,
+            icons: [DiNodejsSmall, SiTypescript]
+        },
     ];
 
     return (
