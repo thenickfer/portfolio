@@ -11,7 +11,7 @@ import Planet from '../../components/planet/Planet.tsx';
 import { motion, AnimatePresence } from 'framer-motion';
 
 import { DiCss3, DiHtml5, DiJsBadge, DiNodejsSmall/*, DiJava */ } from 'react-icons/di'
-import { SiTypescript } from 'react-icons/si';
+import { SiTypescript, SiThreedotjs } from 'react-icons/si';
 
 type previousPage = {
     previous: string
@@ -53,7 +53,7 @@ const Work = (props: previousPage) => {
             text: "This was a shorter personal project with the objective of actually applying some concepts I've been learning during the 3rd semester of my CS bachelor's, mostly for comparing the performance of different data structures such as HashMaps and Octrees",
             url: "https://boids-alpha.vercel.app/",
             imageRef: Boids,
-            icons: [DiNodejsSmall, SiTypescript]
+            icons: [DiNodejsSmall, SiThreedotjs, SiTypescript]
         },
     ];
 
