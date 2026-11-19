@@ -1,1 +1,1 @@
-# This is the code for my personal portfolio
+# This is the code for my personal portfolio (Deprecated)
